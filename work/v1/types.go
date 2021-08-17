@@ -35,6 +35,14 @@ type ManifestWorkSpec struct {
 	// Foreground deletion strategy is applied to all the resource in this manifestwork if it is not set.
 	// +optional
 	DeleteOption *DeleteOption `json:"deleteOption,omitempty"`
+
+	Ownership manifestownership `json:"ownership,omitempty"`
+}
+
+type manifestownership struct {
+	Ownership string `json:"key"`
+	Namespace string `json:"namespace,omitempty"`
+	Name      string `json:"name,omitempty"`
 }
 
 // Manifest represents a resource to be deployed on managed cluster.

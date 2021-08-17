@@ -87,6 +87,15 @@ spec:
                               description: Resource is the resources in the workload
                                 that the strategy is applied
                               type: string
+              ownership:
+                type: object
+                properties:
+                  key:
+                    type: string
+                  name:
+                    type: string
+                  namespace:
+                    type: string
               workload:
                 description: Workload represents the manifest workload to be deployed
                   on a managed cluster.
