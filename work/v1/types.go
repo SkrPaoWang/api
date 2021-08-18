@@ -40,7 +40,7 @@ type ManifestWorkSpec struct {
 }
 
 type manifestownership struct {
-	Ownership string `json:"key"`
+	Ownership string `json:"owner"`
 	Namespace string `json:"namespace,omitempty"`
 	Name      string `json:"name,omitempty"`
 }

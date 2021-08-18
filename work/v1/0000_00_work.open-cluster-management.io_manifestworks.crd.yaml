@@ -90,11 +90,11 @@ spec:
               ownership:
                 type: object
                 properties:
-                  key:
-                    type: string
                   name:
                     type: string
                   namespace:
+                    type: string
+                  owner:
                     type: string
               workload:
                 description: Workload represents the manifest workload to be deployed
